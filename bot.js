@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.user.setPresence({ activity: { name: 'with discord.js' }, status: 'idle' });
+client.setGame("GAME");
 
 client.on('message', message => {
     if (message.content === 'ping') {
