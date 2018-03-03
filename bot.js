@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-await discord.SetGame("try !help");
+const Game g = new Game(gameName, GameType.Default, "https://discordapp.com");
 
 client.on('ready', () => {
     console.log('I am ready!');
