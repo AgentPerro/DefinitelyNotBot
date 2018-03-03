@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-bot.user.setPresence({ status: 'online', game: { name: 'OMFG WORKS' } });
+client.user.setPresence({ status: 'online', game: { name: 'OMFG WORKS' } });
 
 client.on('message', message => {
     if (message.content === 'ping') {
