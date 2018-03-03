@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.user.setPresence(HELLO, 'Do Not Disturb');
+client.user.setPresence({ activity: { name: 'with discord.js' }, status: 'idle' });
 
 client.on('message', message => {
     if (message.content === 'ping') {
