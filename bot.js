@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.user.setStatus(<HELLO>, 'Do Not Disturb');
+client.user.setStatus(HELLO, 'Do Not Disturb');
 
 client.on('message', message => {
     if (message.content === 'ping') {
