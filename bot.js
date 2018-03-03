@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.setGame("GAME");
 
 client.on('message', message => {
     if (message.content === 'ping') {
