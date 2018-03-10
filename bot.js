@@ -20,7 +20,8 @@ client.on('message', message => {
 });
 
 client.on('ready', () => {
-  client.user.setGame("Use !help");
+  client.user.setPresence({game: {name: `with ${client.users.size} users | /help`, type: 0}});
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
