@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.user.setPresence({ game: { name: 'yourGameGoesHere', type: 0 } });
+client.user.setGame({ game: { name: 'yourGameGoesHere', type: 0 } });
 
 client.on('message', message => {
     if(message.content.startsWith("/ping")) {
