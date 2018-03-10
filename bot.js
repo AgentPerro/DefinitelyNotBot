@@ -19,10 +19,5 @@ client.on('message', message => {
   	}
 });
 
-client.on('ready', () => {
-  client.user.setPresence({game: {name: `with ${client.users.size} users | /help`, type: 0}});
-    }
-});
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
