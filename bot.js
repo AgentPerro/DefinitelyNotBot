@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.user.setGame({ game: { name: 'yourGameGoesHere', type: 0 } });
 
 client.on('message', message => {
     if(message.content.startsWith("/ping")) {
@@ -18,6 +17,10 @@ client.on('message', message => {
     if (message.content === 'bing') {
     	message.reply('BONG!');
   	}
+});
+
+bot.on('ready', () => {
+  bot.user.setGame("Use !help");
 });
 
 // THIS  MUST  BE  THIS  WAY
