@@ -20,7 +20,7 @@ client.on('message', message => {
 });
 
 client.on('ready', () => {
-  bot.user.setGame("Use !help");
+  client.user.setGame("Use !help");
 });
 
 // THIS  MUST  BE  THIS  WAY
