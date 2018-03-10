@@ -19,7 +19,7 @@ client.on('message', message => {
   	}
 });
 
-bot.on('ready', () => {
+client.on('ready', () => {
   bot.user.setGame("Use !help");
 });
 
